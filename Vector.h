@@ -8,17 +8,31 @@ private:
 	double x;
 	double y;
 	double z;
+	//double V[];
 public:
-	Vector()
-	{}
-	Vector(double _x, double _y, double _z) : x(_x), y(_y), z(_z)
-	{}
+
+	Vector(double _x,double _y, double _z)
+	{
+		x = _x;
+		y = _y;
+		z = _z;
+	}
+	//Vector(double _x, double _y, double _z)
+	//{
+	//	 V[] = {_x, _y, _z};
+	//}
+	//Vector(double _x, double _y, double _z) : x(_x), y(_y), z(_z)
+	//{}
 
 	void Show()
 	{
 		std::cout << x << " " << y << " " << z << " ";
 	}
 
+	//void SetV(double _x, double _y, double _z)
+	//{
+	//V {}
+	//}
 	double GetX()
 	{
 		return x;
