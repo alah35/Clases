@@ -2,49 +2,50 @@
 #include<iostream>
 #include<array>
 
-//template <class T>
-class Stack
+template <class T> //because we wanna to use this class with different types
+class stack
 {
 private:
-	int j = -1;
-	int* List = new int;
+	int j_ = -1;
+	T* list_ = new T; //stack
 	
 public:
-	void IsEmpty()
+	void is_empty() const // check if the stack is empty
 	{
-		if (j == -1) std::cout << "Stack is empty\n";
+		if (j_ == -1) std::cout << "Stack is empty\n";
 		else std::cout << "Stack is NOT empty\n";
 	}
 
-	void push(int a)
+	void push(T a) // add an element 
 	{
-		j++;
-		List[j] = a;
+		j_++;
+		list_[j_] = a;
 	}
 
-	int top()
+	T top() // return top of stack 
 	{
-		return List[j];
+		return list_[j_];
 	}
 
-	void pop()
+	void pop() // removes the last element by resizing the stack 
 	{
-		j--;
+		j_--;
 	}
 
-	void show()
+	void show() // it shows your stack
 	{
-		for (int i = 0; i <= j; i++)
+		for (int i = 0; i <= j_; i++)
 		{
-			std::cout << List[i]<<" ";
+			std::cout << list_[i]<<" ";
 		}
 		std::cout << "\n";
 	}
 
-	void clear()
+	void clear() // doesn't work, will be cool if you help me with it
 	{
-		delete List;
-		List = nullptr;
+		delete list_;
+		list_ = nullptr;
+		j_ = -1;
 	}
 	
 };

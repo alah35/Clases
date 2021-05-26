@@ -2,13 +2,15 @@
 #include"Vector.h"
 #include"MyArray.h"
 #include "Stack.h"
+#include <string>
+
 
 int main()
 {
-	Stack List;
-	List.IsEmpty();
-	int a, b, c, d;
-	std::cout << "Enter the first elements:\na= ";
+	stack<int> list; //if you wanna change the type of parameters just write your type between <...>,  
+	int a, b, c, d, e; //and change the type of variable a,b,c,d,e to the same
+	list.is_empty();
+	std::cout << "Enter your elements:\na= ";
 	std::cin >> a;
 	std::cout << "b= ";
 	std::cin >> b;
@@ -16,30 +18,31 @@ int main()
 	std::cin >> c;
 	std::cout<< "d= ";
 	std::cin>> d;
-	List.push(a);
-	List.push(b);
-	List.push(c);
-	List.push(d);
-	List.IsEmpty();
+	list.push(a);
+	list.push(b);
+	list.push(c);
+	list.push(d);
+	list.is_empty();
 	std::cout << "Your stack: ";
-	List.show();
+	list.show();
 	std::cout << "Top of your stack: ";
-	std::cout<<List.top()<<"\n";
+	std::cout<<list.top()<<"\n";
 	std::cout << "Now, lets delete last element: \n";
-	List.pop();
-	List.show();
+	list.pop();
+	list.show();
 	std::cout << "Again: \n";
-	List.pop();
-	List.show();
-	int e;
+	list.pop();
+	list.show();
 	std::cout << "Add one more element:\ne=";
 	std::cin >> e;
-	List.push(e);
+	list.push(e);
 	std::cout << "Lets see:\n";
-	List.show();
-	List.pop();
-	List.pop();
-	List.pop();
-	List.IsEmpty();
+	list.show();
 	//List.clear();
+	std::cout << "Delete the stack:\n";
+	list.pop();
+	list.pop();
+	list.pop();
+	list.is_empty();
+	
 }
