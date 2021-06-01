@@ -146,7 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h" />
+    <ClInclude Include="Cat.h" />
     <ClInclude Include="Dog.h" />
+    <ClInclude Include="Fox.h" />
     <ClInclude Include="MyArray.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="Vector.h" />

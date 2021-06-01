@@ -4,7 +4,7 @@
 
 class Animal
 {
-private:
+protected:
 	std::string Message;
 public:
 	Animal() {}

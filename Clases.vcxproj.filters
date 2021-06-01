@@ -44,5 +44,11 @@
     <ClInclude Include="Dog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Cat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
